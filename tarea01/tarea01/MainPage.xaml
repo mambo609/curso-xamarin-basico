@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:tarea01"
+             x:Class="tarea01.MainPage">
+
+    <StackLayout Margin="20" BackgroundColor="LightBlue">
+        <!-- Place new controls here -->
+        <Label x:Name ="texto" TextColor="Orange" Text=" digite un número"/>
+        <Entry x:Name ="entrada"  />
+        <Button x:Name ="Adivine" TextColor="Orange" Text="verifique 500"/>
+    
+       
+        
+    </StackLayout>
+
+</ContentPage>
