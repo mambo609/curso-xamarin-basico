@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:tarea_2"
+             x:Class="tarea_2.MainPage">
+      <ScrollView>
+         
+          
+    <StackLayout BackgroundColor="CadetBlue">
+
+            
+            <!-- Place new controls here -->
+        <Label Text="Elija al compañero que desea visitar!" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+
+        <Picker x:Name="TIC" SelectedIndex="{Binding Industry}" HorizontalOptions="FillAndExpand">
+            <Picker.Items>
+                <x:String>Daniel</x:String>
+                <x:String>Maykel</x:String>
+                <x:String>Eduardo</x:String>
+                <x:String>Rosa</x:String>
+                <x:String>Douglas</x:String>
+                <x:String>Ronald</x:String>
+                <x:String>Gilberto</x:String>
+                <x:String>Juan</x:String>
+                <x:String>Geovanni</x:String>
+            
+            </Picker.Items>
+            
+                 
+        </Picker>
+
+        <Label Text="Digite el motivo de su visita " TextColor="Chartreuse" HorizontalOptions="Center"  VerticalOptions="CenterAndExpand" />
+        <Entry Placeholder="ingresa el motivo"> </Entry>
+
+        <Label Text="Digite su nombre completo" TextColor="Chartreuse" HorizontalOptions="Center"  VerticalOptions="CenterAndExpand" />
+        <Entry Placeholder="ingresa su nombre"></Entry>
+
+        <Label Text="Digite su número celular " TextColor="Chartreuse" HorizontalOptions="Center"  VerticalOptions="CenterAndExpand" />
+        <Entry Keyboard ="Numeric"   Placeholder="ingresa su telefonosin guiones"></Entry>
+
+        <Label Text="Digite su número cedula" TextColor="Chartreuse" HorizontalOptions="Center"  VerticalOptions="CenterAndExpand" />
+        <Entry Keyboard="Numeric" Placeholder="ingresa su celular"></Entry>
+   
+        <DatePicker x:Name="picfecha" Format="dd-MM-yyyy"/>
+
+        <Button Text="guardar"></Button>
+
+       
+
+    </StackLayout>
+          
+    </ScrollView>
+
+</ContentPage>
